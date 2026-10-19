@@ -1,0 +1,1275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 8%;
+    height: 100vh;
+    top:0;
+    left:0;
+}
+.thin {
+    font-family: "briller", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+.reg {
+    font-family: "briller", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 100px;
+    left: -30px;
+    font-size: 20px;
+}
+li {
+    padding: 2%;
+    padding-right: 10%;
+    text-align: right;
+}
+li a {
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a:visited {
+    color: white;
+}
+li a:hover {
+    color: gray;
+}
+h2 {
+    font-size: 20px;
+    text-align: left;
+}
+p {
+    font-size: 12px;
+    text-align: left;
+}
+#home .bw { 
+    background-image: url(photos/silhouette.JPG);
+    height: 500px;
+    margin-top: 3%;
+    margin-left: 65%;
+    margin-right: 8%;
+    margin-bottom: 1%;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#home .bw:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#home h4 {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 8%;
+    margin-bottom: 5%;
+}
+
+
+/* --- iceland section --- */
+#iceland {
+    padding: 50px;
+    margin-left: 11%;
+    margin-right: 3%;
+}
+#iceland .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+
+#iceland .div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(photos/house.JPG);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+ }
+#iceland .div1 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#iceland .div1 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#iceland .div1 .overlay:hover{
+    opacity: 1;
+}
+#iceland .div1 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#iceland .div1 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #iceland .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+#iceland .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(photos/small.waterfall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#iceland .div2 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#iceland .div2 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#iceland .div2 .overlay:hover{
+    opacity: 1;
+}
+#iceland .div2 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#iceland .div2 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#iceland .div2:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#iceland .div3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(photos/blackbeach.JPEG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#iceland .div3 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#iceland .div3 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#iceland .div3 .overlay:hover{
+    opacity: 1;
+}
+#iceland .div3 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#iceland .div3 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#iceland .div3:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#iceland .div4 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(photos/waterfall.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#iceland .div4 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#iceland .div4 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#iceland .div4 .overlay:hover{
+    opacity: 1;
+}
+#iceland .div4 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#iceland .div4 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#iceland .div4:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#iceland .div5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(photos/ice.volcano.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#iceland .div5 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#iceland .div5 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#iceland .div5 .overlay:hover{
+    opacity: 1;
+}
+#iceland .div5 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#iceland .div5 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#iceland .div5:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+
+/* --- japan section --- */
+#japan {
+    padding: 50px;
+    margin-left: 11%;
+    margin-right: 3%;
+}
+#japan .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+#japan .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(photos/street.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#japan .div1 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div1 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div1 .overlay:hover{
+    opacity: 1;
+}
+#japan .div1 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div1 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+
+#japan .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(photos/bamboo\ sky.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#japan .div2 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div2 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div2 .overlay:hover{
+    opacity: 1;
+}
+#japan .div2 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div2 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div2:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+
+#japan .div3 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-image: url(photos/mt.fuji.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#japan .div3 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div3 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div3 .overlay:hover{
+    opacity: 1;
+}
+#japan .div3 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div3 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div3:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+#japan .div4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url(photos/red.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#japan .div4 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div4 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div4 .overlay:hover{
+    opacity: 1;
+}
+#japan .div4 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div4 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div4:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+
+#japan .div5 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(photos/shrine.jpg);
+    height: 250px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#japan .div5 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div5 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div5 .overlay:hover{
+    opacity: 1;
+}
+#japan .div5 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div5 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div5:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+#japan .div6 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(photos/samurai.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#japan .div6 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#japan .div6 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#japan .div6 .overlay:hover{
+    opacity: 1;
+}
+#japan .div6 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#japan .div6 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#japan .div6:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+
+
+/* --- france section --- */
+#france {
+    padding: 50px;
+    margin-left: 11%;
+    margin-right: 3%;
+}
+#france .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+#france .div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(photos/water.lillies.JPG);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+ }
+#france .div1 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#france .div1 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#france .div1 .overlay:hover{
+    opacity: 1;
+}
+#france .div1 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#france .div1 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #france .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#france .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(photos/castle.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#france .div2 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#france .div2 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#france .div2 .overlay:hover{
+    opacity: 1;
+}
+#france .div2 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#france .div2 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#france .div2:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#france .div3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(photos/window.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#france .div3 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#france .div3 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#france .div3 .overlay:hover{
+    opacity: 1;
+}
+#france .div3 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#france .div3 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#france .div3:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#france .div4 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(photos/sculpture.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#france .div4 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#france .div4 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#france .div4 .overlay:hover{
+    opacity: 1;
+}
+#france .div4 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#france .div4 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#france .div4:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#france .div5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(photos/spider.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#france .div5 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#france .div5 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#france .div5 .overlay:hover{
+    opacity: 1;
+}
+#france .div5 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#france .div5 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#france .div5:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+
+/* --- national parks section --- */
+#parks {
+    padding: 50px;
+    margin-left: 11%;
+    margin-right: 3%;
+}
+#parks .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+#parks .div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(photos/hole.JPG);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+ }
+#parks .div1 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#parks .div1 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#parks .div1 .overlay:hover{
+    opacity: 1;
+}
+#parks .div1 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#parks .div1 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #parks .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#parks .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(photos/gradient.JPEG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#parks .div2 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#parks .div2 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#parks .div2 .overlay:hover{
+    opacity: 1;
+}
+#parks .div2 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#parks .div2 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#parks .div2:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#parks .div3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(photos/mountain.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#parks .div3 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#parks .div3 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#parks .div3 .overlay:hover{
+    opacity: 1;
+}
+#parks .div3 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#parks .div3 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#parks .div3:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#parks .div4 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-image: url(photos/sunset.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#parks .div4 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#parks .div4 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#parks .div4 .overlay:hover{
+    opacity: 1;
+}
+#parks .div4 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#parks .div4 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#parks .div4:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#parks .div5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-image: url(photos/canyon.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#parks .div5 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#parks .div5 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#parks .div5 .overlay:hover{
+    opacity: 1;
+}
+#parks .div5 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#parks .div5 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#parks .div5:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+/* --- vietnam section --- */
+#vietnam {
+    padding: 50px;
+    margin-left: 11%;
+    margin-right: 3%;
+}
+#vietnam .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+}
+#vietnam .div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: black;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+ }
+#vietnam .div1 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#vietnam .div1 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#vietnam .div1 .overlay:hover{
+    opacity: 1;
+}
+#vietnam .div1 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#vietnam .div1 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #vietnam .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+#vietnam .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#vietnam .div2 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#vietnam .div2 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#vietnam .div2 .overlay:hover{
+    opacity: 1;
+}
+#vietnam .div2 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#vietnam .div2 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #vietnam .div2:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#vietnam .div3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+#vietnam .div3 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#vietnam .div3 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#vietnam .div3 .overlay:hover{
+    opacity: 1;
+}
+#vietnam .div3 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#vietnam .div3 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+ #vietnam .div3:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+#vietnam .div4 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+ #vietnam .div4 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#vietnam .div4 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#vietnam .div4 .overlay:hover{
+    opacity: 1;
+}
+#vietnam .div4 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#vietnam .div4 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#vietnam .div4:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+#vietnam .div5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#vietnam .div5 .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+#vietnam .div5 .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+#vietnam .div5 .overlay:hover{
+    opacity: 1;
+}
+#vietnam .div5 .overlay:hover > *{
+    transform: translateY(0px);
+}
+#vietnam .div5 h5 {
+    font-size: 12px;
+    text-align: center;
+}
+#vietnam .div5:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+
+#about {
+    margin-left: 11%;
+    padding-left: 100px;
+    padding-right: 145px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+#about .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 40px;
+grid-row-gap: 40px;
+}
+#about .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(photos/duo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+#about .div1:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+ }
+#about .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-color: black;
+}
+#about .div2 p{
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 2.5;
+    padding: 50px 50px 50px 50px;
+}
+
+
+
