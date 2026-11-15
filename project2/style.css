@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.bbodoni {
+    font-family: "bodoni-urw", serif;
+font-weight: 400;
+font-style: normal;
+}
+.bodoni {
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.bodonii {
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+header {
+    background-color:  rgb(232, 111, 140);
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    border-right: 2px solid black;
+}
+h1 {
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+letter-spacing: 0.05em;
+font-family: "bodoni-urw", serif;
+font-weight: 500;
+font-style: normal;
+
+text-decoration: none;
+color:black
+}
+h1 a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s ease-in-out;
+} 
+h1 a:hover {
+    color: white;
+}
+.contents {
+    background-color: rgb(247, 177, 193);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    z-index: 9;
+    border-top: 2px solid black;
+}
+.contents a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-right: 15vh;
+}
+.contents a:hover {
+    color: white;
+}
+h2 {
+    font-size: 60px;
+    color:rgb(232, 111, 140);
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 2;
+}
+h3 {
+    font-size: 15px;
+    color: black;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+}
+
+/*cover page*/
+.cover {
+    background: #E86F8C;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 100vh;
+    z-index: 0;
+    position:fixed;
+    display: flex;          /* Places children side-by-side */    /* Vertically centers the text with the image */
+   gap: 5%;  
+}
+.c-header {
+    display: none;
+}
+.lay {
+    background-image:url(images/lay.png);
+    background-size: cover;
+    background-position:fixed;
+     width: 70%;
+  height: 90%;
+  left: 0%;
+ margin-top: 3%;
+  transition: background-image 0.3s ease-in-out;
+}
+.lay:hover {
+    background-image:url(images/laypink.png);
+}
+.title {
+    position: fixed; 
+     width: 25%;
+     height: 100%;
+     right: 8%;
+     top: 25%;
+}
+.title img {
+position: center;  
+width: 100%;
+}
+
+/*intro page*/
+
+
+
+.intro .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height:100vh;
+width: 90%;
+margin-left: 8%;
+}
+.intro h2 { 
+    font-size: 60px;
+    margin-top: 5%;
+    position: center;
+}
+.intro h3 {
+    text-indent: 2em;
+}
+.intro .div1 { grid-area: 1 / 1 / 3 / 2; 
+  margin-top: 10%;
+}
+.intro .div1 img{ 
+    width: 50%;
+  height: 70vh;
+  margin-top: 10%;
+  margin-left:40%;
+}
+.intro .div2 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(images/cd.jpg);
+    width: 100%;
+  height: 95%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.intro .div2:hover {
+  background-image: url(images/cd-pink.png);
+}
+.intro .div3 { 
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.intro .div4 { 
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 80%;
+    background-size: cover;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+/*a section*/
+.LA .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+height:100vh;
+width: 95%;
+margin-left:5%;
+background-color: white;
+}
+.LA h2 { 
+    color:rgb(232, 111, 140);
+    font-size: 50px;
+}
+.LA p { 
+    color: black;
+    font-size: 15px;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+}
+.LA .div1 { 
+    grid-area: 1 / 1 / 4 / 2; 
+    background-color: rgb(227, 226, 226);
+    border-right: 2px solid black;
+}   
+.LA .div1 img {
+    justify-content: contain;
+    height: 90%;
+    position: center;
+    margin-top: 8%;
+    margin-left: 14%;
+}
+.LA .div1 img:hover {
+    animation: horizontal-shake 2s infinite;
+}
+@keyframes horizontal-shake {
+  0%, 100% { transform: translateX(0);}
+  20%, 60% { transform: translateX(-6px);}
+  40%, 80% { transform: translateX(6px); }
+}
+.LA .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.LA .div3 { 
+    grid-area: 2 / 2 / 3 / 3;  
+}
+ .LA .div3 img {
+   width: 70%;
+    position: center;
+    justify-content: contain;
+    margin-left: 15%;
+}
+.LA .div4 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+}
+
+
+/*B section*/
+.B .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+height:100vh;
+width: 90%;
+margin-left: 10%;
+}
+.B h2 { 
+    font-size: 50px;
+    color:  rgb(232, 111, 140);
+}
+.B p { 
+    color: black;
+    font-size: 15px;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    margin-right: 10%;
+}
+.B .caption {
+    font-size: 15px;
+    color:rgb(232, 111, 140);
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    z-index: 5;
+}
+.B .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 10%;
+}
+.B .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    margin-top: 2%;
+}
+.B .div3 { 
+    grid-area: 3 / 1 / 4 / 2;
+     display: flex;          /* Places children side-by-side */    /* Vertically centers the text with the image */
+   align-items: center;
+   gap: 20%;   
+}
+.B .div3 img {
+    justify-content:contain;
+    width: 40%;
+    position: center;
+    margin-top: 3%;
+}
+.B .div4 { 
+    grid-area: 1 / 2 / 4 / 3;
+    border-left: 2px solid black;
+    background-color:  rgb(232, 111, 140);
+}
+.B .div4 img {
+    justify-content:contain;
+    width: 70%;
+    position: center;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+.B .div4 img:hover {
+    animation: horizontal-shake 2s infinite;
+}
+@keyframes horizontal-shake {
+  0%, 100% { transform: translateX(0);}
+  20%, 60% { transform: translateX(-6px);}
+  40%, 80% { transform: translateX(6px); }
+}
+
+/*a section*/
+.C .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+height:100vh;
+width: 95%;
+margin-left:5%;
+background-color: white;
+}
+.C h2 { 
+    color:rgb(232, 111, 140);
+    font-size: 50px;
+}
+.C p { 
+    color: black;
+    font-size: 15px;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+}
+.C .caption {
+    font-size: 15px;
+    color:rgb(232, 111, 140);
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    text-align: justify;
+    z-index: 5;
+    text-indent: 40px;
+}
+.C .div1 { 
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(227, 226, 226);
+    border-right: 2px solid black;
+}   
+.C .div1 img {
+    justify-content: contain;
+    height: 80%;
+    position: center;
+    margin-top: 8%;
+    margin-left: 14%;
+}
+.C .div1 img:hover {
+    animation: horizontal-shake 2s infinite;
+}
+@keyframes horizontal-shake {
+  0%, 100% { transform: translateX(0);}
+  20%, 60% { transform: translateX(-6px);}
+  40%, 80% { transform: translateX(6px); }
+}
+
+.C .div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.C .div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    display: flex;          /* Places children side-by-side */    /* Vertically centers the text with the image */
+   align-items: center;
+   gap: 5%;   
+  margin-right: 15%;
+}
+ .C .div3 img {
+    width: 70%;
+    position: bottom;
+    justify-content: contain;
+}
+
+/*D section*/
+.D .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 10px;
+height:100vh;
+width: 90%;
+margin-left: 10%;
+}
+.D h2 { 
+    font-size: 50px;
+    color:  rgb(232, 111, 140);
+}
+.D p { 
+    color: black;
+    font-size: 15px;
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    margin-right: 10%;
+}
+.D .caption {
+    font-size: 15px;
+    color:rgb(232, 111, 140);
+    font-family: "bodoni-urw", serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    text-align: justify;
+    z-index: 5;
+    text-indent: 40px;
+}
+.D .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 10%;
+}
+.D .div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    margin-top: 3%;
+}
+.D .div3 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    display: flex;          /* Places children side-by-side */    /* Vertically centers the text with the image */
+   align-items: center;
+   gap: 20%;   
+}
+.D .div3 img {
+    justify-content:contain;
+    width: 50%;
+    position: center;
+}
+.D .div4 { 
+    grid-area: 1 / 2 / 4 / 3;
+    border-left: 2px solid black;
+    background-color: rgb(227, 226, 226);
+}
+.D .div4 img {
+    justify-content:contain;
+    width: 70%;
+    position: center;
+    margin-top: 12%;
+    margin-left: 15%;
+}
+.D .div4 img:hover {
+    animation: horizontal-shake 2s infinite;
+}
+@keyframes horizontal-shake {
+  0%, 100% { transform: translateX(0);}
+  20%, 60% { transform: translateX(-6px);}
+  40%, 80% { transform: translateX(6px); }
+}
