@@ -165,10 +165,10 @@ margin-left: 8%;
   margin-top: 10%;
 }
 .intro .div1 img{ 
-    width: 60%;
+    width: 30vh;
   height: 75vh;
   margin-top: 10%;
-  margin-left:35%;
+  margin-left:43%;
 }
 .intro .div2 { 
     grid-area: 1 / 2 / 3 / 3; 
@@ -195,10 +195,10 @@ margin-left: 8%;
     background-image: url(images/logo.png);
     background-repeat: no-repeat;
     height: 10vh;
-    width: 80%;
+    width: 50vh;
     background-size: cover;
     margin-left: 12%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 /*a section*/
